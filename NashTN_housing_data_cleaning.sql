@@ -170,7 +170,7 @@ WITH RowNumCTE AS(
 SELECT *, 
 ROW_NUMBER() OVER(
 		PARTITION BY ParcelID,
-					PropertyAddress,
+		    PropertyAddress,
                     SaleDate,
                     SalePrice,
                     LegalReference
